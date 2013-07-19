@@ -1,0 +1,19 @@
+colorscheme ir_black
+"Fkn Awesome cinopts for the Uncle.
+set cinoptions=>s,e0,n0,f0,{1s,}0,^-s,L-1,:s,=s,l0,b0,gs,hs,ps,ts,is,+s,c3,C0,/0,(2s,us,U0,w0,W0,m0,j0,J0,)20,*70,#0
+" Buffer explorer {
+      nmap <leader>b :BufExplorer<CR>
+" }"
+imap jj <esc>
+nnoremap <CR> :w<CR>
+" GUI Settings {
+if has('gui_running')
+    if has("gui_gtk2")
+        set guifont=Source\ Code\ Pro\ 10,Menlo\ Regular\ 15,Consolas\ Regular\ 16,Courier\ New\ Regular\ 18
+    elseif has("gui_mac")
+        set guifont=Andale\ Mono\ Regular:h16,Menlo\ Regular:h15,Consolas\ Regular:h16,Courier\ New\ Regular:h18
+    elseif has("gui_win32")
+        set guifont=Source_Code_Pro:h10,Menlo:h10,Consolas:h10,Courier_New:h10
+    endif
+endif
+"}
